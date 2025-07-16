@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
 body {
     margin: 0;
     background-color: rgb(15, 15, 15);
@@ -6,24 +9,68 @@ body {
     color: aliceblue;
     justify-items: center;
     gap: 20px;
+    font-family: "Lora", sans-serif;
 }
 
 header {
     padding: 10px;
     position: fixed;
-    background-color: black;
     width: 100%;
-    height: 40px;
 }
+
+nav>button,
+.instagram {
+    background: none;
+    color: #f0f8ff;
+    border: none;
+    font-size: 15px;
+    font-family: "Lora", sans-serif;
+    height: 30px;
+
+}
+
+nav>button:hover,
+.instagram:hover {
+    cursor: pointer;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 21fr 110px;
+    padding: 0px 20px;
+}
+
+.book-table {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 0px 10px;
+    font-weight: 600;
+    grid-column: 6 / 7;
+}
+
+.about {
+    border-right: 1px solid aliceblue;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+
+.instagram {
+    background-image: url(assets/instagram.svg);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(57%) saturate(1835%) hue-rotate(178deg) brightness(103%) contrast(106%);
+
+}
+
+
 
 footer {
     padding: 10px;
     background-color: black;
     text-align: center;
-}
-
-div#content {
-    margin-top: 40px;
 }
 
 
@@ -35,16 +82,21 @@ div#content {
 }
 
 .background {
-    background-image: url(bar.png);
+    display: flex;
+    background-image: url(assets/bar.png);
     background-size: cover;
     height: 550px;
-    width: 1920px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .title {
-    font-size: 45px;
-
+    background-image: url(assets/logo.png);
+    background-size: cover;
+    width: 450px;
+    height: 225px;
 }
 
 .subtitle {
@@ -55,7 +107,6 @@ div#content {
     width: min(75%, 500px);
     text-align: justify;
 }
-
 
 
 .chefs {
@@ -75,15 +126,14 @@ div#content {
 .portrait {
     width: 200px;
     height: 250px;
-    background-image: url(carmy.png);
+    background-image: url(assets/carmy.png);
     background-size: cover;
 
 }
 
 .portrait.sydney {
-    background-image: url(sydney.png);
+    background-image: url(assets/sydney.png);
 }
-
 
 .desc-carmy,
 .desc-sydney {
