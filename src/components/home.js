@@ -1,20 +1,22 @@
 
-function home() {
-    const home = document.createElement("div");
-    const background = document.createElement("div");
-    const title = document.createElement("div");
-    const subtitle = document.createElement("div");
-    const subtitleChefs = document.createElement("div");
-    const desc = document.createElement("div");
-    const chefs = document.createElement("div");
-    const portrait = document.createElement("div");
-    const descContainer = document.createElement("div");
-    const chefName = document.createElement("div");
-    const descCarmy = document.createElement("div");
-    const portraitSydney = document.createElement("div");
-    const descContainerSydney = document.createElement("div");
-    const chefNameSydney = document.createElement("div");
-    const descSydney = document.createElement("div");
+export default function home() {
+    //horrible stuff, go to the next project but never do this shit again.
+    const div = () => document.createElement("div");
+    const home = div();
+    const background = div();
+    const title = div();
+    const subtitle = div();
+    const subtitleChefs = div();
+    const desc = div();
+    const chefs = div();
+    const portrait = div();
+    const descContainer = div();
+    const chefName = div();
+    const descCarmy = div();
+    const portraitSydney = div();
+    const descContainerSydney = div();
+    const chefNameSydney = div();
+    const descSydney = div();
 
     home.classList.add("home");
     background.classList.add("background");
@@ -64,4 +66,3 @@ function home() {
     return home;
 }
 
-export { home };

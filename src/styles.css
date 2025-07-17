@@ -6,7 +6,7 @@ body {
     background-color: rgb(15, 15, 15);
     display: flex;
     flex-direction: column;
-    color: aliceblue;
+    color: #fff7c9;
     justify-items: center;
     gap: 20px;
     font-family: "Lora", sans-serif;
@@ -41,7 +41,7 @@ nav {
 }
 
 .book-table {
-    background-color: aliceblue;
+    background-color: #fff7c9;
     color: black;
     border-radius: 5px;
     font-size: 15px;
@@ -65,12 +65,11 @@ nav {
 
 }
 
-
-
 footer {
     padding: 10px;
     background-color: black;
     text-align: center;
+    justify-self: end;
 }
 
 
@@ -97,10 +96,12 @@ footer {
     background-size: cover;
     width: 450px;
     height: 225px;
+
 }
 
 .subtitle {
     font-size: 30px;
+    color: #e9a366;
 }
 
 .desc {
@@ -115,6 +116,8 @@ footer {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     row-gap: 30px;
+    border-bottom: 1px solid #fff7c9;
+    padding-bottom: 25px;
 }
 
 .desc-container {
@@ -122,6 +125,8 @@ footer {
     flex-direction: column;
     gap: 10px;
 }
+
+
 
 .portrait {
     width: 200px;
@@ -143,4 +148,62 @@ footer {
 .chef-name {
     width: 300px;
     font-size: 22px;
+}
+
+/* Menu */
+
+.menu-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.menu-title {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.menu-card {
+    display: grid;
+    width: 900px;
+    height: 832px;
+    row-gap: 25px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(4, 1fr);
+    border-top: 1px solid #fff7c9;
+    border-bottom: 1px solid #fff7c9;
+    padding: 30px 50px 70px;
+}
+
+.food {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+
+.food-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #e9a366;
+}
+
+.food[pos="0"] {
+    background-image: url(assets/food/lemonchicken.png);
+
+}
+
+.food[pos="1"] {
+    background-image: url(assets/food/colaribs.png);
+}
+
+.food[pos="2"] {
+    background-image: url(assets/food/ravioli.png);
+}
+
+.food[pos="3"] {
+    background-image: url(assets/food/sandwich.png);
 }
